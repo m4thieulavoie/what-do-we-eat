@@ -1,0 +1,19 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "depTypeList": ["devDependencies"],
+      "automerge": true
+    },
+    {
+      "packagePatterns": [
+        "^@microsoft/fast-components",
+        "^@microsoft/fast-element",
+        "^@microsoft/fast-foundation",
+        "^@microsoft/fast-web-utilities"
+      ],
+      "groupName": "Microsoft FAST"
+    }
+  ]
+}
