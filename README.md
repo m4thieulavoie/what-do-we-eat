@@ -1,26 +1,17 @@
-# webcomponents-starter
+# what-do-we-eat
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=shield)](https://circleci.com/gh/m4thieulavoie/webcomponents-starter)
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=shield)](https://circleci.com/gh/m4thieulavoie/what-do-we-eat)
 
-`webcomponents-starter` aims to be a battery-included starter project for any Web Components enthousiasth. Its goal is to accelerate your development process by providing all the behind-the-scenes tools, such as
-
-- Webpack
-- Typescript
-- SASS
-- Prettier/eslint/stylelint
-- A few Web Components examples (Made with FAST here)
-- vaadin router
-
-This repo is based on this [vaadin article](https://vaadin.com/learn/tutorials/using-web-components) for Web Components in Webpack, and this [Webpack article](https://webpack.js.org/guides/typescript/) for the Typescript support
+If you're here, you're definitely curious, and you're most likely going to be disappointed. This project is a millionth attempt at fixing the infamous "What do you want to eat this week?" question. Who's more objective than JavaScript to help gf and I put together a weekly food schedule.
 
 ## Getting started
 
 ### Clone the project
 
 ```bash
-git clone git@github.com:m4thieulavoie/webcomponents-starter.git
+git clone git@github.com:m4thieulavoie/what-do-we-eat.git
 ```
 
 ### Install dependencies
@@ -28,7 +19,7 @@ git clone git@github.com:m4thieulavoie/webcomponents-starter.git
 Then, to init the project
 
 ```bash
-cd webcomponents-starter
+cd what-do-we-eat
 npm install
 ```
 
@@ -41,13 +32,3 @@ npm start
 ```
 
 `Webpack` will then indicate you to open `localhost:3000`. When you'll do so, you'll see the project running.
-
-## Web Components
-
-### Underlying framework
-
-For the sake of this project, we rely on [FAST Components](https://github.com/microsoft/fast) to accelerate the development of components. Definitely feel free to get rid of the dependency and add your favourite framework if you feel like it!
-
-### Polyfills
-
-We provide `@webcomponents/webcomponentsjs` in the project, but disabled it by default (for bundle size reasons). If you want to support older browsers, head in `index.ts` and uncomment the line that `require`s `webcomponentsjs`.
